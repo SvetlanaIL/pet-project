@@ -4,16 +4,16 @@ import './styles/index.scss';
 import {useTheme} from "app/providers/ThemeProvider";
 import {classNames} from "shared/lib/classNames/classNames";
 import AppRouter from "app/providers/router/ui/AppRouter";
+import {Navbar} from "widgets/Navbar";
 
 const App = () => {
     const {theme, toggleTheme} = useTheme();
 
     return (
         <div className={classNames('app', {}, [theme])}>
-            <button onClick={toggleTheme}>Toogle theme</button> <br/>
-            <Link to={'/'}>Главная</Link>
-            <Link to={'/about'}>О сайте</Link>
+            <Navbar/>
             <AppRouter/>
+            <button onClick={toggleTheme}>Toogle theme</button> <br/>
         </div>
     );
 };

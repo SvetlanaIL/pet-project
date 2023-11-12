@@ -1,8 +1,12 @@
 .app.dark {
   --bg-color: #6305cd;
+  --inverted-bg-color: #e3e1e8;
 
   //Цвет для заголовков, кнопок, ссылок
-  --primary-color: #16b294;
+  --primary-color: #049604;
   //Цвет текста
-  --secondary-color: #158668;
+  --secondary-color: #04ff04;
+
+  --inverted-primary-color: #0232c2;
+  --inverted-secondary-color: #0449e0;
 }
