@@ -1,4 +1,4 @@
-import React, {Suspense} from 'react';
+import React, {Suspense, useEffect} from 'react';
 import {Link} from 'react-router-dom';
 import './styles/index.scss';
 import {useTheme} from "app/providers/ThemeProvider";
