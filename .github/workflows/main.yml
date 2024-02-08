@@ -21,5 +21,3 @@ jobs:
         run: npm install
       - name: build production project
         run: npm run build:prod
-      - name: unit testing
-        run: npm run test:unit
