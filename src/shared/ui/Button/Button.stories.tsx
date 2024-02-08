@@ -5,7 +5,7 @@ import {Theme} from "app/providers/ThemeProvider";
 import {ThemeDecorator} from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 
 const meta: Meta<typeof Button> = {
-    title: 'Example/Button',
+    title: 'Shared/Button',
     component: Button,
     parameters: {
         layout: 'fullscreen',

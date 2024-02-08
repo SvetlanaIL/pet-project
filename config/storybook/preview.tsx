@@ -4,6 +4,7 @@ import type {Preview} from "@storybook/react";
 import {StyleDecorator} from "shared/config/storybook/StyleDecorator/StyleDecorator";
 import {ThemeDecorator} from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 import {Theme} from "app/providers/ThemeProvider";
+import {RouterDecorator} from "shared/config/storybook/RouterDecorator/RouterDecorator";
 
 // import '!!style-loader?injectType=lazyStyleTag!css-loader!../../src/app/styles/themes/light.scss';
 // import '!!style-loader?injectType=lazyStyleTag!css-loader!../../src/app/styles/themes/dark.scss';
@@ -19,8 +20,10 @@ const preview: Preview = {
     },
   },
   decorators: [
+      RouterDecorator,
       StyleDecorator,
-      ThemeDecorator(Theme.LIGHT)],
+      ThemeDecorator(Theme.LIGHT)
+  ]
 };
 
 export default preview;
