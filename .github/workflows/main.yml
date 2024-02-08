@@ -1,16 +1,15 @@
-name: testing, building
-run-name: ${{ github.actor }} is testing out GitHub Actions 🚀
+name: linting, testing, building
 on:
   push:
-    branches: [main]
+    branches: [ main ]
   pull_request:
-    branches: [main]
+    branches: [ main ]
 jobs:
   pipeline:
-    runs-on: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [17.x]
+        node-version: [ 17.x ]
 
     steps:
       - uses: actions/checkout@v2
