@@ -4,6 +4,7 @@ import cls from './Navbar.module.scss';
 import {Modal} from "shared/ui/Modal/Modal";
 import {Button, ButtonTheme} from "shared/ui/Button/Button";
 import {useTranslation} from "react-i18next";
+import {LoginModal} from "features/AuthByUserName";
 
 export interface NavbarProps {
     className?: string,
@@ -26,10 +27,10 @@ export const Navbar = ({className}: NavbarProps) => {
             >
                 {t('Войти')}
             </Button>
-            <Modal isOpen={isAuthModal} onClose={onToggleModal}>
-                {/* eslint-disable-next-line */}
-                {t('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid commodi consequatur eligendi impedit incidunt necessitatibus possimus quis saepe sunt totam.')}
-            </Modal>
+            <LoginModal
+                isOpen={isAuthModal}
+                onClose={onToggleModal}
+            />
         </div>
     );
 };
