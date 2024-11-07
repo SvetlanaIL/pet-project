@@ -5,6 +5,8 @@ import React, {
 import { Portal } from 'shared/ui/Portal/Portal';
 import { useTheme } from 'app/providers/ThemeProvider';
 import cls from './Modal.module.scss';
+import {useDispatch} from "react-redux";
+import {userActions} from "entities/User";
 
 interface ModalProps {
     className?: string;
@@ -26,6 +28,7 @@ export const Modal = (props: ModalProps) => {
     const [isClosing, setIsClosing] = useState(false);
     const timerRef = useRef<ReturnType<typeof setTimeout>>();
     const { theme } = useTheme();
+    const dispatch = useDispatch();
 
     const closeHandler = useCallback(() => {
         if (onClose) {
