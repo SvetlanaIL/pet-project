@@ -1,5 +1,3 @@
-import {classNames} from "shared/lib/classNames/classNames";
-import cls from './DynamicModuleLoader.module.scss';
 import {FC, useEffect} from "react";
 import {loginReducer} from "features/AuthByUserName/model/slice/loginSlice";
 import {useDispatch, useStore} from "react-redux";
