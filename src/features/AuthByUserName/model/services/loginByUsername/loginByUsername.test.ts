@@ -21,6 +21,7 @@ describe('loginByUsername.test', () => {
         const userValue = {username: '123', id: '1'};
         mockedAxios.post.mockReturnValue(Promise.resolve({data:userValue}));
         const action = loginByUsername({username: '123', password: '123'});
+        // @ts-ignore
         const result = await action(dispatch, getState, undefined);
 
         expect(dispatch).toHaveBeenCalledTimes(3);
@@ -33,6 +34,7 @@ describe('loginByUsername.test', () => {
     test('error login', async () => {
         mockedAxios.post.mockReturnValue(Promise.resolve({status: 403}));
         const action = loginByUsername({username: '123', password: '123'});
+        // @ts-ignore
         const result = await action(dispatch, getState, undefined);
 
         expect(dispatch).toHaveBeenCalledTimes(2);
