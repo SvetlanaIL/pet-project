@@ -7,7 +7,8 @@ import ProfileIcon from "shared/assets/icons/profile.svg";
 export interface SidebarItemType {
     path: string,
     Icon: React.VFC<React.SVGProps<SVGSVGElement>>,
-    text: string
+    text: string,
+    authOnly?: boolean,
 }
 
 export const SidebarItemsList: SidebarItemType[] = [
@@ -25,5 +26,6 @@ export const SidebarItemsList: SidebarItemType[] = [
         path: RoutePath.profile,
         Icon: ProfileIcon,
         text: 'Профиль',
+        authOnly: true,
     },
 ];
