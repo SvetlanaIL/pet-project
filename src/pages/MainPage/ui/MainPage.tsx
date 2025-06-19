@@ -8,9 +8,7 @@ const MainPage = () => {
 
     return (
         <div>
-            <BugButton/>
             {t('Главная')}
-            <Counter/>
         </div>
     );
 };
