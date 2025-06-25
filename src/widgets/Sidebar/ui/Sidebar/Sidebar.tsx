@@ -1,11 +1,12 @@
 import {classNames} from "shared/lib/classNames/classNames";
 import cls from './Sidebar.module.scss';
-import React, {memo, useState} from "react";
+import React, {memo, useMemo, useState} from "react";
 import {ThemeSwitcher} from "widgets/ThemeSwitcher/ui/ThemeSwitcher";
 import {LangSwitcher} from "widgets/LangSwitcher";
 import {Button, ButtonSize, ButtonTheme} from "shared/ui/Button/Button";
 import {SidebarItem} from "../SidebarItem/SidebarItem";
-import {SidebarItemsList} from "../../model/types/items";
+import {getSidebarItems} from "widgets/Sidebar/model/selectors/getSidebarItems";
+import {useSelector} from "react-redux";
 
 export interface SidebarProps {
     className?: string,
@@ -13,38 +14,44 @@ export interface SidebarProps {
 
 export const Sidebar = memo(({className}: SidebarProps) => {
     const [collapsed, setCollapsed] = useState(false);
+    const sidebarItemsList = useSelector(getSidebarItems);
 
     const onToggle = () => {
         setCollapsed(prev => !prev);
     }
 
+    const itemsList = useMemo(() => sidebarItemsList.map((item) => (
+        <SidebarItem
+            item={item}
+            collapsed={collapsed}
+            key={item.path}
+        />
+    )), [collapsed, sidebarItemsList]);
+
     return (
         <div
-            data-testid='sidebar'
+            data-testid="sidebar"
             className={classNames(cls.Sidebar, {[cls.collapsed]: collapsed}, [className])}
         >
             <Button
-                data-testid='sidebar-toggle'
+                data-testid="sidebar-toggle"
                 onClick={onToggle}
-                className={cls.collapsedBtn}
+                className={cls.collapseBtn}
                 theme={ButtonTheme.BACKGROUND_INVERTED}
-                square
                 size={ButtonSize.L}
+                square
             >
                 {collapsed ? '>' : '<'}
             </Button>
             <div className={cls.items}>
-                {SidebarItemsList.map((item) => (
-                    <SidebarItem
-                        item={item}
-                        collapsed={collapsed}
-                        key={item.path}
-                    />
-                ))}
+                {itemsList}
             </div>
             <div className={cls.switchers}>
                 <ThemeSwitcher/>
-                <LangSwitcher short={collapsed} className={cls.lang}/>
+                <LangSwitcher
+                    short={collapsed}
+                    className={cls.lang}
+                />
             </div>
         </div>
     );
