@@ -8,7 +8,7 @@ export interface InputProps extends HTMLInputProps {
     className?: string,
     value?: string | number;
     labelValue?: string,
-    id: string,
+    id?: string,
     onChange?: (value: string) => void,
     autofocus?: boolean;
     readonly?: boolean;
