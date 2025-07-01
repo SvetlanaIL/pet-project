@@ -14,11 +14,11 @@
   "articles": [
     {
       "id": "1",
-      "title": "Javascript news",
+      "title": "Javascript news СВЕЖАЯ",
       "subtitle": "Что нового в JS за 2022 год?",
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
-      "createdAt": "26.02.2022",
+      "createdAt": "26.04.2022",
       "userId": "1",
       "type": [
         "IT"
@@ -88,8 +88,8 @@
       "id": "2",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://camo.githubusercontent.com/959ab979c671c3da47020f38444399823fd5b5f6ad3f818b227e2b8df55217f7/68747470733a2f2f75706c6f61642e77696b696d656469612e6f72672f77696b6970656469612f636f6d6d6f6e732f7468756d622f632f63332f507974686f6e2d6c6f676f2d6e6f746578742e7376672f3230343870782d507974686f6e2d6c6f676f2d6e6f746578742e7376672e706e67",
-      "views": 1022,
+      "img": "https://user-images.githubusercontent.com/45760833/88960730-3c846300-d2a4-11ea-9530-e26aa3a2c96f.png",
+      "views": 5204,
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
@@ -110,11 +110,11 @@
     },
     {
       "id": "3",
-      "title": "Kotlin news",
+      "title": "Kotlin news 2019",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://web-creator.ru/technologies/kotlin.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "img": "https://smartbits.pro/images/kotlin-logo.png",
+      "views": 94002,
+      "createdAt": "26.02.2019",
       "userId": "1",
       "type": [
         "IT"
@@ -134,11 +134,11 @@
     },
     {
       "id": "4",
-      "title": "Python news",
+      "title": "Scala news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "img": "https://avatars.mds.yandex.net/i?id=2f851b017baa7c5b272bb3d0c88579fa-4936799-images-thumbs&n=13",
+      "views": 10222,
+      "createdAt": "24.01.2022",
       "userId": "1",
       "type": [
         "IT"
@@ -158,11 +158,11 @@
     },
     {
       "id": "5",
-      "title": "Kotlin news",
+      "title": "Golang news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "img": "https://sun9-74.userapi.com/impg/w5-VhKa_rP_kStjL62z1sn6WmBiJk5N2QptBpQ/-UdhILFmTkY.jpg?size=604x604&quality=95&sign=f87306a20f3614ea188af76c5014e403&type=album",
+      "views": 10222,
+      "createdAt": "26.02.2020",
       "userId": "1",
       "type": [
         "IT"
@@ -182,9 +182,9 @@
     },
     {
       "id": "6",
-      "title": "Python news",
+      "title": "Java news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
+      "img": "https://logos-world.net/wp-content/uploads/2022/07/Java-Logo.jpg",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -206,11 +206,11 @@
     },
     {
       "id": "7",
-      "title": "Kotlin news",
+      "title": "Ruby news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
-      "views": 1022,
-      "createdAt": "26.02.2022",
+      "img": "https://user-images.githubusercontent.com/55117744/201371371-fc55fb7d-41e1-407a-ba9b-c67fa7c24ae6.png",
+      "views": 100,
+      "createdAt": "21.02.2022",
       "userId": "1",
       "type": [
         "IT"
@@ -230,10 +230,10 @@
     },
     {
       "id": "8",
-      "title": "Python news",
+      "title": "TypeScript news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
-      "views": 1022,
+      "img": "https://camo.githubusercontent.com/ce56e64adb8fb1ee82bc5fefc504e3b912c4bbca5382226786e6bb2af6986294/68747470733a2f2f6769746c61622e636f6d2f75706c6f6164732f2d2f73797374656d2f67726f75702f6176617461722f31303732303235332f747970657363726970742e706e67",
+      "views": 102222,
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
@@ -256,7 +256,7 @@
       "id": "9",
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
+      "img": "https://smartbits.pro/images/kotlin-logo.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -280,7 +280,7 @@
       "id": "10",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
+      "img": "https://user-images.githubusercontent.com/45760833/88960730-3c846300-d2a4-11ea-9530-e26aa3a2c96f.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -304,7 +304,7 @@
       "id": "11",
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
+      "img": "https://smartbits.pro/images/kotlin-logo.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -328,7 +328,7 @@
       "id": "12",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
+      "img": "https://user-images.githubusercontent.com/45760833/88960730-3c846300-d2a4-11ea-9530-e26aa3a2c96f.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -352,7 +352,7 @@
       "id": "13",
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
+      "img": "https://smartbits.pro/images/kotlin-logo.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -376,7 +376,7 @@
       "id": "14",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
+      "img": "https://user-images.githubusercontent.com/45760833/88960730-3c846300-d2a4-11ea-9530-e26aa3a2c96f.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -400,7 +400,7 @@
       "id": "15",
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
+      "img": "https://smartbits.pro/images/kotlin-logo.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -424,7 +424,7 @@
       "id": "16",
       "title": "Python news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://zsfond.ru/wp-content/uploads/2021/03/piton-1-1024x578.jpg",
+      "img": "https://user-images.githubusercontent.com/45760833/88960730-3c846300-d2a4-11ea-9530-e26aa3a2c96f.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
@@ -448,12 +448,60 @@
       "id": "17",
       "title": "Kotlin news",
       "subtitle": "Что нового в JS за 2022 год?",
-      "img": "https://miro.medium.com/max/1200/1*FNakkrty3kjOvNU8m5iQfw.png",
+      "img": "https://smartbits.pro/images/kotlin-logo.png",
       "views": 1022,
       "createdAt": "26.02.2022",
       "userId": "1",
       "type": [
         "IT"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "18",
+      "title": "Экономическая статья - ИНФЛЯЦИЯ!",
+      "subtitle": "Экономика",
+      "img": "https://datalab.alkmaar.nl/data/ckan/economie.png",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "ECONOMICS"
+      ],
+      "blocks": [
+        {
+          "id": "1",
+          "type": "TEXT",
+          "title": "Заголовок этого блока",
+          "paragraphs": [
+            "Программа, которую по традиции называют «Hello, world!», очень проста. Она выводит куда-либо фразу «Hello, world!», или другую подобную, средствами некоего языка.",
+            "JavaScript — это язык, программы на котором можно выполнять в разных средах. В нашем случае речь идёт о браузерах и о серверной платформе Node.js. Если до сих пор вы не написали ни строчки кода на JS и читаете этот текст в браузере, на настольном компьютере, это значит, что вы буквально в считанных секундах от своей первой JavaScript-программы.",
+            "Существуют и другие способы запуска JS-кода в браузере. Так, если говорить об обычном использовании программ на JavaScript, они загружаются в браузер для обеспечения работы веб-страниц. Как правило, код оформляют в виде отдельных файлов с расширением .js, которые подключают к веб-страницам, но программный код можно включать и непосредственно в код страницы. Всё это делается с помощью тега <script>. Когда браузер обнаруживает такой код, он выполняет его. Подробности о теге script можно посмотреть на сайте w3school.com. В частности, рассмотрим пример, демонстрирующий работу с веб-страницей средствами JavaScript, приведённый на этом ресурсе. Этот пример можно запустить и средствами данного ресурса (ищите кнопку Try it Yourself), но мы поступим немного иначе. А именно, создадим в каком-нибудь текстовом редакторе (например — в VS Code или в Notepad++) новый файл, который назовём hello.html, и добавим в него следующий код:"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "19",
+      "title": "Научная статья - Биология",
+      "subtitle": "БиологиЯ",
+      "img": "https://cdn3.iconfinder.com/data/icons/science-115/64/Biology-natural-science-organism-physical-512.png",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
       ],
       "blocks": [
         {

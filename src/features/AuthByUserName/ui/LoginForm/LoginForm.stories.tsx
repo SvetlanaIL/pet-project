@@ -22,7 +22,7 @@ export const Primary: Story = {
 };
 
 Primary.decorators = StoreDecorator({
-    login: {username: 'admin', password: '123'}
+    loginForm: {username: 'admin', password: '123'}
 });
 
 export const withError: Story = {
@@ -30,7 +30,7 @@ export const withError: Story = {
 };
 
 withError.decorators = StoreDecorator({
-    login: {username: 'admin', password: '123', error: 'error'}
+    loginForm: {username: 'admin', password: '123', error: 'error'}
 });
 
 export const loading: Story = {
@@ -38,5 +38,5 @@ export const loading: Story = {
 };
 
 loading.decorators = StoreDecorator({
-    login: {isLoading: true}
+    loginForm: {isLoading: true}
 });

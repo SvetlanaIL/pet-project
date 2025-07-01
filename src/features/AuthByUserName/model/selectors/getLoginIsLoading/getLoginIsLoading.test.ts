@@ -4,7 +4,7 @@ import {getLoginIsLoading} from "./getLoginIsLoading";
 describe('getLoginIsLoading', () => {
     test('should return true', () => {
         const state: DeepPartial<StateSchema> = {
-            login: {
+            loginForm: {
                 isLoading: true
             }
         }

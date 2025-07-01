@@ -4,7 +4,7 @@ import {getLoginPassword} from "./getLoginPassword";
 describe('getLoginPassword', () => {
     test('should return password', () => {
         const state: DeepPartial<StateSchema> = {
-            login: {
+            loginForm: {
                 password: '123'
             }
         }
