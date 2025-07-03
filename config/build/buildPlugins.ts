@@ -2,6 +2,7 @@ import webpack from "webpack";
 import HtmlWebpackPlugin from "html-webpack-plugin";
 import {BuildOptions} from "./types/config";
 import MiniCssExtractPlugin from "mini-css-extract-plugin";
+import CopyPlugin from 'copy-webpack-plugin';
 
 export function buildPlugins({isDev, paths, apiUrl}: BuildOptions): webpack.WebpackPluginInstance[] {
     return [
@@ -17,6 +18,11 @@ export function buildPlugins({isDev, paths, apiUrl}: BuildOptions): webpack.Webp
         new webpack.DefinePlugin({
             __IS_DEV__: JSON.stringify(isDev),
             __API__: JSON.stringify(apiUrl)
-        })
+        }),
+        new CopyPlugin({
+            patterns: [
+                { from: paths.locales, to: paths.buildLocales },
+            ],
+        }),
     ];
 }
