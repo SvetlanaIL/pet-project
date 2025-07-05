@@ -10,6 +10,8 @@ import {userActions} from "entities/User";
 import {Text, TextTheme} from "shared/ui/Text/Text";
 import {RoutePath} from "shared/config/routeConfig/routeConfig";
 import {AppLink, AppLinkTheme} from "shared/ui/AppLink/AppLink";
+import {Avatar} from "shared/ui/Avatar/Avatar";
+import {Dropdown} from "shared/ui/Dropdown/Dropdown";
 
 export interface NavbarProps {
     className?: string,
@@ -38,7 +40,7 @@ export const Navbar = memo(({className}: NavbarProps) => {
             <header className={classNames(cls.Navbar, {}, [className])}>
                 <Text
                     className={cls.appName}
-                    title={t('Reading App')}
+                    title={t('Ulbi TV App')}
                     theme={TextTheme.INVERTED}
                 />
                 <AppLink
@@ -48,13 +50,21 @@ export const Navbar = memo(({className}: NavbarProps) => {
                 >
                     {t('Создать статью')}
                 </AppLink>
-                <Button
-                    theme={ButtonTheme.CLEAR_INVERTED}
-                    className={cls.links}
-                    onClick={onLogout}
-                >
-                    {t('Выйти')}
-                </Button>
+                <Dropdown
+                    direction="bottom left"
+                    className={cls.dropdown}
+                    items={[
+                        {
+                            content: t('Профиль'),
+                            href: RoutePath.profile + authData.id,
+                        },
+                        {
+                            content: t('Выйти'),
+                            onClick: onLogout,
+                        },
+                    ]}
+                    trigger={<Avatar size={30} src={authData.avatar}/>}
+                />
             </header>
         )
     }
