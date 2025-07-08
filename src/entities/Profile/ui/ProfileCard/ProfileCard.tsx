@@ -2,7 +2,6 @@ import {classNames, Mods} from "shared/lib/classNames/classNames";
 import cls from './ProfileCard.module.scss';
 import {useTranslation} from "react-i18next";
 import {Input} from 'shared/ui/Input/Input'
-import {Profile} from "entities/Profile";
 import {Loader} from "shared/ui/Loader/Loader";
 import {Text, TextAlign, TextTheme} from "shared/ui/Text/Text";
 import {Avatar} from "shared/ui/Avatar/Avatar";
@@ -10,6 +9,7 @@ import {Currency} from "entities/Currency/model/types/currency";
 import {CurrencySelect} from "entities/Currency";
 import {Country} from "entities/Country/model/types/country";
 import {CountrySelect} from "entities/Country";
+import {Profile} from "features/editableProfileCard";
 
 export interface ProfileCardProps {
     className?: string,

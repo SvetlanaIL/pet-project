@@ -1,31 +1,33 @@
-import {classNames} from "shared/lib/classNames/classNames";
-import cls from './ProfilePageHeader.module.scss';
-import {Text} from "shared/ui/Text/Text";
-import {Button, ButtonTheme} from "shared/ui/Button/Button";
-import React, {useCallback} from "react";
-import {useSelector} from "react-redux";
-import {
-    fetchProfileData,
-    getProfileData,
-    getProfileReadonly,
-    profileActions,
-    updateProfileData
-} from "entities/Profile";
-import {useAppDispatch} from "shared/lib/hooks/useAppDispatch/useAppDispatch";
-import {getUserAuthData} from "entities/User";
-import {useTranslation} from "react-i18next";
+import { classNames } from 'shared/lib/classNames/classNames';
+import { useTranslation } from 'react-i18next';
+import { memo, useCallback } from 'react';
+import { useSelector } from 'react-redux';
 
-export interface ProfilePageHeaderProps {
-    className?: string,
+import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
+import { HStack } from 'shared/ui/Stack';
+import { Text } from 'shared/ui/Text/Text';
+import { Button, ButtonTheme } from 'shared/ui/Button/Button';
+import { getUserAuthData } from 'entities/User';
+import { profileActions } from '../../model/slice/profileSlice';
+import { getProfileReadonly } from '../../model/selectors/getProfileReadonly/getProfileReadonly';
+import { getProfileData } from '../../model/selectors/getProfileData/getProfileData';
+import { updateProfileData } from '../../model/services/updateProfileData/updateProfileData';
+
+interface EditableProfileCardHeaderProps {
+    className?: string;
 }
 
-export const ProfilePageHeader = ({className}: ProfilePageHeaderProps) => {
+export const EditableProfileCardHeader = memo((props: EditableProfileCardHeaderProps) => {
+    const {
+        className,
+    } = props;
+
+    const { t } = useTranslation('profile');
     const authData = useSelector(getUserAuthData);
     const profileData = useSelector(getProfileData);
     const canEdit = authData?.id === profileData?.id;
     const readonly = useSelector(getProfileReadonly);
     const dispatch = useAppDispatch();
-    const { t } = useTranslation('profile');
 
     const onEdit = useCallback(() => {
         dispatch(profileActions.setReadonly(false));
@@ -40,14 +42,13 @@ export const ProfilePageHeader = ({className}: ProfilePageHeaderProps) => {
     }, [dispatch]);
 
     return (
-        <div className={classNames(cls.ProfilePageHeader, {}, [className])}>
-            <Text title={t('Профиль')}/>
+        <HStack max justify="between" className={classNames('', {}, [className])}>
+            <Text title={t('Профиль')} />
             {canEdit && (
-                <div className={cls.btnsWrapper}>
+                <div>
                     {readonly
                         ? (
                             <Button
-                                className={cls.editBtn}
                                 theme={ButtonTheme.OUTLINED}
                                 onClick={onEdit}
                             >
@@ -55,25 +56,23 @@ export const ProfilePageHeader = ({className}: ProfilePageHeaderProps) => {
                             </Button>
                         )
                         : (
-                            <>
+                            <HStack gap="8">
                                 <Button
-                                    className={cls.editBtn}
                                     theme={ButtonTheme.OUTLINE_RED}
                                     onClick={onCancelEdit}
                                 >
                                     {t('Отменить')}
                                 </Button>
                                 <Button
-                                    className={cls.saveBtn}
                                     theme={ButtonTheme.OUTLINED}
                                     onClick={onSave}
                                 >
                                     {t('Сохранить')}
                                 </Button>
-                            </>
+                            </HStack>
                         )}
                 </div>
             )}
-        </div>
+        </HStack>
     );
-};
+});
