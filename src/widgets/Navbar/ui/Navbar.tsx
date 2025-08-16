@@ -7,11 +7,11 @@ import { useSelector } from 'react-redux';
 import {getUserAuthData} from 'entities/User';
 import { Text, TextTheme } from 'shared/ui/Text/Text';
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink';
-import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import cls from './Navbar.module.scss';
 import {HStack} from "shared/ui/Stack";
 import {AvatarDropdown} from "features/avatarDropdown/ui/AvatarDropdown/AvatarDropdown";
 import {NotificationButton} from "features/notificationButton/ui/NotificationButton/NotificationButton";
+import {RoutePath} from "shared/const/router";
 
 interface NavbarProps {
     className?: string;

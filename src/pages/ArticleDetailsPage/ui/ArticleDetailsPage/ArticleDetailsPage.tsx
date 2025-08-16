@@ -5,7 +5,7 @@ import cls from './ArticleDetailsPage.module.scss';
 import {useParams} from "react-router-dom";
 import {ArticleDetails} from "entities/Article";
 import {DynamicModuleLoader, ReducersList} from "shared/lib/components/DynamicModuleLoader/DynamicModuleLoader";
-import {Page} from "widgets/Page/Page";
+import {Page} from "widgets/Page/ui/Page/Page";
 import {articleDetailsPageReducer} from "../../model/slices";
 import {ArticleDetailsPageHeader} from "pages/ArticleDetailsPage/ui/ArticleDetailsPageHeader/ArticleDetailsPageHeader";
 import {ArticleRecommendationsList} from "features/articleRecommendationsList";
