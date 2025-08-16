@@ -21,3 +21,4 @@ render(
     </BrowserRouter>,
     document.getElementById('root')
 )
+export {Theme} from "shared/const/theme";

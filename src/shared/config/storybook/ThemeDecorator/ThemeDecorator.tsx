@@ -1,6 +1,6 @@
 import {Decorator} from '@storybook/react';
-import {Theme, ThemeProvider} from 'app/providers/ThemeProvider';
-import themeProvider from "app/providers/ThemeProvider/ui/ThemeProvider";
+import {ThemeProvider} from 'app/providers/ThemeProvider';
+import {Theme} from "shared/const/theme";
 
 export const ThemeDecorator = (theme: Theme): Decorator => (Story) => (
     <ThemeProvider initialTheme={theme}>
