@@ -12,7 +12,7 @@ export {
     userReducer,
     userActions,
 } from './model/slice/userSlice';
-export {
+export type {
     UserSchema,
     User,
 
