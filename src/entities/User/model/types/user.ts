@@ -1,5 +1,5 @@
-import {UserRole} from "entities/User/model/consts/userConsts";
-import {FeatureFlags} from "shared/types/featureFlags";
+import { UserRole } from 'entities/User/model/consts/userConsts';
+import { FeatureFlags } from 'shared/types/featureFlags';
 
 export interface User {
     id: string;
