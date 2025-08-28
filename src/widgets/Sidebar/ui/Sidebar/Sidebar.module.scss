@@ -1,8 +1,8 @@
 .Sidebar {
-  position: relative;
   height: calc(100vh - var(--navbar-height));
   width: var(--sidebar-width);
-  background-color: var(--inverted-bg-color);
+  background: var(--inverted-bg-color);
+  position: relative;
   transition: width 0.3s;
 }
 
@@ -11,7 +11,6 @@
   bottom: 20px;
   display: flex;
   justify-content: center;
-  align-items: center;
   width: 100%;
 }
 
@@ -19,7 +18,7 @@
   margin-left: 20px;
 }
 
-.collapsedBtn {
+.collapseBtn {
   position: absolute;
   right: -32px;
   bottom: 32px;
@@ -27,19 +26,31 @@
 }
 
 .items {
-  margin: 20px 0 0 30px;
-  display: flex;
-  flex-direction: column;
+  margin-top: 20px;
+  margin-left: 30px;
 }
 
 .collapsed {
-  width: var(--sidebar-collapsed-width);
+  width: var(--sidebar-width-collapsed);
+
   .switchers {
     flex-direction: column;
     align-items: center;
   }
+
   .lang {
     margin-left: 0;
   }
 }
 
+
+.SidebarRedesigned {
+  background: var(--light-bg-redesigned);
+  width: 220px;
+  height: 100%;
+  border-radius: 32px;
+}
+
+.appLogo {
+  padding-top: 20px;
+}
