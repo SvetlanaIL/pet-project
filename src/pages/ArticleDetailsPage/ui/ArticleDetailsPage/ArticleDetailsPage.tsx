@@ -12,7 +12,7 @@ import { Page } from 'widgets/Page/ui/Page/Page';
 import { articleDetailsPageReducer } from '../../model/slices';
 import { ArticleDetailsPageHeader } from 'pages/ArticleDetailsPage/ui/ArticleDetailsPageHeader/ArticleDetailsPageHeader';
 import { ArticleRecommendationsList } from 'features/articleRecommendationsList';
-import { VStack } from 'shared/ui/deprecated/Stack';
+import { VStack } from 'shared/ui/redesigned/Stack';
 import { ArticleDetailsComments } from 'pages/ArticleDetailsPage/ui/ArticleDetailsComments/ArticleDetailsComments';
 import { ArticleRating } from 'features/articleRating';
 import { ToggleFeatures, toggleFeatures } from 'shared/lib/features';

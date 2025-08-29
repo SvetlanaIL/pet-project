@@ -1,8 +1,8 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { useTranslation } from 'react-i18next';
 import React, { memo, useCallback } from 'react';
-import { Avatar } from 'shared/ui/deprecated/Avatar/Avatar';
-import { Dropdown } from 'shared/ui/deprecated/Popups';
+import { Avatar as AvatarDeprecated } from 'shared/ui/deprecated/Avatar/Avatar';
+import { Dropdown as DropdownDeprecated } from 'shared/ui/deprecated/Popups';
 import { useDispatch, useSelector } from 'react-redux';
 import {
     getUserAuthData,
@@ -11,6 +11,9 @@ import {
     userActions,
 } from 'entities/User';
 import { getRouteAdmin, getRouteProfile } from 'shared/const/router';
+import { ToggleFeatures } from 'shared/lib/features';
+import { Avatar } from 'shared/ui/redesigned/Avatar';
+import { Dropdown } from 'shared/ui/redesigned/Popups/ui/Dropdown/Dropdown';
 
 interface AvatarDropdownProps {
     className?: string;
@@ -34,30 +37,49 @@ export const AvatarDropdown = memo((props: AvatarDropdownProps) => {
         return null;
     }
 
+    const items = [
+        ...(isAdminPanelAvailable
+            ? [
+                  {
+                      content: t('Админка'),
+                      href: getRouteAdmin(),
+                  },
+              ]
+            : []),
+        {
+            content: t('Профиль'),
+            href: getRouteProfile(authData.id),
+        },
+        {
+            content: t('Выйти'),
+            onClick: onLogout,
+        },
+    ];
+
     return (
-        <Dropdown
-            direction="bottom left"
-            className={classNames('', {}, [className])}
-            items={[
-                ...(isAdminPanelAvailable
-                    ? [
-                          {
-                              content: t('Админка'),
-                              href: getRouteAdmin(),
-                          },
-                      ]
-                    : []),
-                {
-                    content: t('Профиль'),
-                    href: getRouteProfile(authData.id),
-                },
-                {
-                    content: t('Выйти'),
-                    onClick: onLogout,
-                },
-            ]}
-            trigger={
-                <Avatar fallbackInverted size={30} src={authData.avatar} />
+        <ToggleFeatures
+            feature="isAppRedesigned"
+            on={
+                <Dropdown
+                    direction="bottom left"
+                    className={classNames('', {}, [className])}
+                    items={items}
+                    trigger={<Avatar size={40} src={authData.avatar} />}
+                />
+            }
+            off={
+                <DropdownDeprecated
+                    direction="bottom left"
+                    className={classNames('', {}, [className])}
+                    items={items}
+                    trigger={
+                        <AvatarDeprecated
+                            fallbackInverted
+                            size={30}
+                            src={authData.avatar}
+                        />
+                    }
+                />
             }
         />
     );

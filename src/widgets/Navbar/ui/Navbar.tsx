@@ -8,7 +8,7 @@ import { getUserAuthData } from 'entities/User';
 import { Text, TextTheme } from 'shared/ui/deprecated/Text/Text';
 import { AppLink, AppLinkTheme } from 'shared/ui/deprecated/AppLink/AppLink';
 import cls from './Navbar.module.scss';
-import { HStack } from 'shared/ui/deprecated/Stack';
+import { HStack } from 'shared/ui/redesigned/Stack';
 import { AvatarDropdown } from 'features/avatarDropdown/ui/AvatarDropdown/AvatarDropdown';
 import { NotificationButton } from 'features/notificationButton/ui/NotificationButton/NotificationButton';
 import { getRouteArticleCreate } from 'shared/const/router';

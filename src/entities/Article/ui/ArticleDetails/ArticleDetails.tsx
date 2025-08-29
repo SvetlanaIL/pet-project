@@ -25,7 +25,7 @@ import {
     getArticleDetailsIsLoading,
 } from '../../model/selectors/articleDetails';
 import { ArticleBlock, ArticleBlockType } from '../../model/types/article';
-import { HStack, VStack } from 'shared/ui/deprecated/Stack';
+import { HStack, VStack } from 'shared/ui/redesigned/Stack';
 
 interface ArticleDetailsProps {
     className?: string;
