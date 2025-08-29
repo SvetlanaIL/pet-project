@@ -1,5 +1,5 @@
-import {Button} from "shared/ui/Button/Button";
-import {useEffect, useState} from "react";
+import { Button } from 'shared/ui/deprecated/Button/Button';
+import { useEffect, useState } from 'react';
 
 //Тестовый компонент
 export const BugButton = () => {
@@ -13,9 +13,5 @@ export const BugButton = () => {
         }
     }, [error]);
 
-    return (
-        <Button onClick={onThrowError}>
-            throw error
-        </Button>
-    );
+    return <Button onClick={onThrowError}>throw error</Button>;
 };

@@ -1,11 +1,11 @@
 import { classNames } from 'shared/lib/classNames/classNames';
 import { memo } from 'react';
-import { Text } from 'shared/ui/Text/Text';
+import { Text } from 'shared/ui/deprecated/Text/Text';
 import { useTranslation } from 'react-i18next';
 import cls from './CommentList.module.scss';
 import { CommentCard } from '../CommentCard/CommentCard';
 import { Comment } from '../../model/types/comment';
-import {VStack} from "shared/ui/Stack";
+import { VStack } from 'shared/ui/deprecated/Stack';
 
 interface CommentListProps {
     className?: string;
@@ -19,7 +19,11 @@ export const CommentList = memo((props: CommentListProps) => {
 
     if (isLoading) {
         return (
-            <VStack gap='16' max className={classNames(cls.CommentList, {}, [className])}>
+            <VStack
+                gap="16"
+                max
+                className={classNames(cls.CommentList, {}, [className])}
+            >
                 <CommentCard isLoading />
                 <CommentCard isLoading />
                 <CommentCard isLoading />
@@ -28,9 +32,13 @@ export const CommentList = memo((props: CommentListProps) => {
     }
 
     return (
-        <VStack gap='16' max className={classNames(cls.CommentList, {}, [className])}>
-            {comments?.length
-                ? comments.map((comment) => (
+        <VStack
+            gap="16"
+            max
+            className={classNames(cls.CommentList, {}, [className])}
+        >
+            {comments?.length ? (
+                comments.map((comment) => (
                     <CommentCard
                         isLoading={isLoading}
                         className={cls.comment}
@@ -38,7 +46,9 @@ export const CommentList = memo((props: CommentListProps) => {
                         key={comment.id}
                     />
                 ))
-                : <Text text={t('Комментарии отсутствуют')} />}
+            ) : (
+                <Text text={t('Комментарии отсутствуют')} />
+            )}
         </VStack>
     );
 });
