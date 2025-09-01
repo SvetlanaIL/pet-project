@@ -12,6 +12,8 @@ import {
     ArticleSortField,
     ArticleType,
 } from 'entities/Article/model/types/article';
+import SearchIcon from 'shared/assets/icons/search.svg';
+import { Icon } from 'shared/ui/redesigned/Icon';
 
 interface ArticlesFiltersProps {
     className?: string;
@@ -49,6 +51,7 @@ export const ArticlesFilters = memo((props: ArticlesFiltersProps) => {
                     onChange={onChangeSearch}
                     value={search}
                     placeholder={t('Поиск')}
+                    addonLeft={<Icon Svg={SearchIcon} />}
                 />
                 <ArticleTypeTabs
                     value={type}
