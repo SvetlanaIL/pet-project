@@ -3,8 +3,8 @@ import { memo, useEffect, useState } from 'react';
 import { isMobile } from 'react-device-detect';
 import { saveJsonSettings, useJsonSettings } from 'entities/User';
 import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
-import { Drawer } from 'shared/ui/deprecated/Drawer/Drawer';
-import { Modal } from 'shared/ui/deprecated/Modal/Modal';
+import { Drawer } from 'shared/ui/redesigned/Drawer/Drawer';
+import { Modal } from 'shared/ui/redesigned/Modal/Modal';
 import { Text } from 'shared/ui/deprecated/Text/Text';
 
 export const ArticlePageGreeting = memo(() => {

@@ -8,7 +8,7 @@ import { Icon as IconDeprecated } from 'shared/ui/deprecated/Icon/Icon';
 import NotificationIconDeprecated from 'shared/assets/icons/notificationDeprecated.svg';
 import { NotificationList } from 'entities/Notification';
 import { Popover as PopoverDeprecated } from 'shared/ui/deprecated/Popups';
-import { Drawer } from 'shared/ui/deprecated/Drawer/Drawer';
+import { Drawer } from 'shared/ui/redesigned/Drawer/Drawer';
 import { BrowserView, MobileView } from 'react-device-detect';
 import cls from './NotificationButton.module.scss';
 import { ToggleFeatures } from 'shared/lib/features';
