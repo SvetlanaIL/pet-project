@@ -45,5 +45,11 @@
   "просмотрам": "views",
   "Создание новой статьи": "Create new article",
   "Редактирование статьи с ID = ": "Edit article with ID = ",
-  "Создать статью": "Create article"
+  "Ulbi TV App": "Ulbi TV App",
+  "Создать статью": "Create article",
+  "Профиль пользователя": "Профиль пользователя",
+  "Закрыть": "Закрыть",
+  "{{count}} просмотров_zero": "{{count}} views",
+  "{{count}} просмотров_one": "{{count}} view",
+  "{{count}} просмотров_other": "{{count}} views"
 }

@@ -29,7 +29,7 @@ import { HStack, VStack } from 'shared/ui/redesigned/Stack';
 
 interface ArticleDetailsProps {
     className?: string;
-    id: string;
+    id?: string;
 }
 
 const reducers: ReducersList = {
