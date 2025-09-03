@@ -594,6 +594,12 @@
       "userId": "1",
       "text": "vrgrger",
       "id": "L--Owvh"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "hello",
+      "id": "9RYCIqZ"
     }
   ],
   "users": [
@@ -609,7 +615,7 @@
       },
       "avatar": "https://i.pinimg.com/736x/a2/d7/47/a2d74712514c8bce8db6a7a0a2270c4f.jpg",
       "jsonSettings": {
-        "theme": "app_light_theme",
+        "theme": "app_dark_theme",
         "isFirstVisit": true,
         "settingsPageHasBeenOpen": false,
         "isArticlesPageWasOpened": true
